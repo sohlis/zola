@@ -3580,6 +3580,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/grapes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68449,
+		"inputAbbreviatedPath": "\/img\/grapes.png",
+		"outputAbbreviatedPath": "\/img\/grapes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/leek.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3609,6 +3620,17 @@
 		"initialSize": 471492,
 		"inputAbbreviatedPath": "\/img\/leek2.jpg",
 		"outputAbbreviatedPath": "\/img\/leek2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Untitled-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85245,
+		"inputAbbreviatedPath": "\/img\/Untitled-1.png",
+		"outputAbbreviatedPath": "\/img\/Untitled-1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

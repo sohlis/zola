@@ -4,6 +4,22 @@
 @font-face {
   font-family: 'ChronItal';
   src: url("cd_i.otf"); }
+@font-face {
+  font-family: 'ChronText';
+  src: url("ct.otf"); }
+h1 {
+  font-family: "Chron", "Didot", "Bodoni", serif;
+  color: #7f7f7f;
+  font-size: 4.2em; }
+
+h3 {
+  font-family: "ChronItal", "Didot", "Bodoni", serif;
+  color: #7f7f7f; }
+
+p {
+  font-family: "ChronText", "Didot", "Bodoni", serif;
+  color: #7f7f7f; }
+
 .topphoto {
   width: 100%;
   height: 100%;
@@ -17,20 +33,17 @@
   background-size: cover; }
 
 html {
-  background-image: linear-gradient(to top, #1a1a1a, #424242); }
+  background-color: #373737; }
 
 #logo {
-  margin-top: 8em; }
+  margin-top: 10%; }
+
+#restof {
+  margin-top: -2%; }
 
 #pagecontain {
   background-color: #f5f2eb;
-  margin-top: -13em;
   border-radius: 5px; }
 
 #topheadline {
   padding-top: 3em; }
-
-h1 {
-  font-family: "Chron", "Didot", "Bodoni", sans-serif;
-  color: #7f7f7f;
-  font-size: 6em; }
