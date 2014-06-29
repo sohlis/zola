@@ -47,8 +47,29 @@ html {
   margin-top: -2%; }
 
 #pagecontain {
-  background-color: #f5f2eb;
-  border-radius: 5px; }
+  background-color: #f5f2eb; }
 
 #topheadline {
   padding-top: 3em; }
+
+.top-bar {
+  background-color: #8A2E20;
+  height: 75px;
+  border-radius: 5px; }
+
+.contain-to-grid {
+  background-color: #8A2E20; }
+
+#wordmark {
+  margin-top: 12px; }
+
+.rightsidenav-ul {
+  margin-top: 17px; }
+
+.rightsidenav-contents {
+  font-family: "ChronText", "Didot", "Bodoni", serif;
+  font-weight: 100;
+  display: inline;
+  color: #F5F2EB;
+  line-height: 45px;
+  margin-right: 20px; }
