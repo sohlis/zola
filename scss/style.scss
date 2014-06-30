@@ -1,6 +1,7 @@
 $white-color: #F5F2EB;
-$red-color: #AB4A35;
+$red-color: #8A2E20;
 $dark-color: #7F7F7F;
+$light-red: #AB4A35;
 
 @font-face {
   font-family: 'Chron';
@@ -31,7 +32,7 @@ h2 {
   font-size: 3em;
 }
 
-h3 {
+h3, h4 {
   font-family: $em-font;
   color: $dark-color;
 }
@@ -41,7 +42,19 @@ p {
   color: $dark-color
 }
 
+ul {
+  font-family: $body-font;
+  color: $dark-color;
+  list-style-type: square;
+}
 
+a {
+  color: $red-color;
+}
+
+a:hover {
+  color: #AB4A35;
+}
 
 .topphoto {
    width: 100%;
@@ -62,7 +75,7 @@ html {  background-color:#373737;}
 }
 
 #restof {
- margin-top: -2%;
+ // margin-top: -2%;
 
 
 }
@@ -80,6 +93,14 @@ html {  background-color:#373737;}
 }
 
 #vegs {
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+
+p.adr {
+  margin-bottom: 0;
 }
 
 // TOPBAR NAV
@@ -103,7 +124,7 @@ html {  background-color:#373737;}
 }
 
 .rightsidenav-contents {
-  font-family: $body-font;
+  font-family: $em-font;
   font-weight: 100;
   display: inline;
   color: #F5F2EB;

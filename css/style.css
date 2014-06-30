@@ -17,13 +17,24 @@ h2 {
   color: #7f7f7f;
   font-size: 3em; }
 
-h3 {
+h3, h4 {
   font-family: "ChronItal", "Didot", "Bodoni", serif;
   color: #7f7f7f; }
 
 p {
   font-family: "ChronText", "Didot", "Bodoni", serif;
   color: #7f7f7f; }
+
+ul {
+  font-family: "ChronText", "Didot", "Bodoni", serif;
+  color: #7f7f7f;
+  list-style-type: square; }
+
+a {
+  color: #8a2e20; }
+
+a:hover {
+  color: #AB4A35; }
 
 .topphoto {
   width: 100%;
@@ -43,14 +54,17 @@ html {
 #logo {
   margin-top: 10%; }
 
-#restof {
-  margin-top: -2%; }
-
 #pagecontain {
   background-color: #f5f2eb; }
 
 #topheadline {
   padding-top: 3em; }
+
+.footer {
+  padding-bottom: 50px; }
+
+p.adr {
+  margin-bottom: 0; }
 
 .top-bar {
   background-color: #8A2E20;
@@ -67,7 +81,7 @@ html {
   margin-top: 17px; }
 
 .rightsidenav-contents {
-  font-family: "ChronText", "Didot", "Bodoni", serif;
+  font-family: "ChronItal", "Didot", "Bodoni", serif;
   font-weight: 100;
   display: inline;
   color: #F5F2EB;
