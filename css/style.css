@@ -124,3 +124,12 @@ button:hover {
   background-color: transparent;
   color: #7f7f7f;
   border: 1px dotted #7f7f7f; }
+
+.smallimg {
+  width: 10em;
+  height: 10em;
+  background-color: #f5f2eb; }
+
+.imgholder {
+  margin-top: 2em;
+  height: 12em; }
