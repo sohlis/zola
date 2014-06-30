@@ -113,14 +113,11 @@
                 <div style="text-align:center; padding-top: 200px;" class="large-8 large-centered columns"><h2>“We just love this place”<hr></h2><p>—Jim McMasterson</p></div>
                 </div> -->
                <div class="row">
-                  <div class="large-4 columns"><h2>Some views</h2></div>
+                  <div class="large-4 columns"><h2>Our latest</h2></div>
                    <hr>
 
                    <div class="imgholder">
-                   <div class="large-3 columns"><a class="th smallimg" href="#"><img src="http://placehold.it/400x400"></a></div>
-                    <div class="large-3 columns"><a class="th smallimg" href="#"><img src="http://placehold.it/400x400"></a></div>
-                    <div class="large-3 columns"><a class="th smallimg" href="#"><img src="http://placehold.it/400x400"></a></div>
-                    <div class="large-3 columns"><a class="th smallimg" href="#"><img src="http://placehold.it/400x400"></a></div>
+                   <div id="instafeed"></div>
                    </div>
 
                    
@@ -164,18 +161,35 @@
           </div>
       </div>
     </div>
-     <!-- skroller -->
-<!--     
-        <script type="text/javascript" src="js/skrollr.js"></script>
-    <script type="text/javascript">
-    var s = skrollr.init();
-     </script> 
- -->
-    <!-- js -->
+    <!-- 
+
+
+https://instagram.com/oauth/access_token/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef0&redirect_uri=http://stefansohlstrom.com/#/&response_type=access_token
+
+https://instagram.com/oauth/access_token/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef0&redirect_uri=http%3A%2F%2Fstefansohlstrom.com/#/&response_type=token
+
+https://instagram.com/oauth/authorize/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef0&redirect_uri=http%3A%2F%2Fstefansohlstrom.com%2F#%2F&response_type=token
+     -->
+     
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+<!-- instafeed -->
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        // get: 'user',
+        // userId: 6576100,
+        tagName: 'croquemonsieur',
 
+        sortby: 'random',
+        limit: 4,
+        template: '<div class="large-3 columns"><a class="th smallimg" href="{{link}}"><img src="{{image}}"></a></div>',
+        clientId: '7d482ce5b9bf4a49ba10a5d2c41ebef0'
+    });
+    feed.run();
+</script>
    
   </body>
 </html>
