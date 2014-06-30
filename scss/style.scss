@@ -195,3 +195,42 @@ button:active {
 #date {
   font-family: $head-font
 }
+
+// LETS MAKE THIS PUPPY RESPONSIVE
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+
+
+
+#Layer_1 {
+  width:200px;
+  margin-left: 15%;
+}
+
+.contain-to-grid {
+  display: none;
+}
+
+h1 {
+  font-size:3em;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+button {
+  // width: 50%;
+  padding: 10px 70px;
+  margin-left: 1%;
+  margin-bottom: 60px;
+}
+
+.instastuff {
+  display: none;
+}
+
+}
