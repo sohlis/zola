@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Zola</title>
     <link rel="stylesheet" href="css/app.css" />
-   
+   <link rel="icon" type="image/ico" href="img/favicon.ico"/>
     <script src="bower_components/modernizr/modernizr.js"></script>
      <link rel="stylesheet" href="css/style.css" />
       <style type="text/css">
@@ -112,16 +112,31 @@
                 <!-- <div style="margin-bottom: 200px" class="row"><hr>
                 <div style="text-align:center; padding-top: 200px;" class="large-8 large-centered columns"><h2>“We just love this place”<hr></h2><p>—Jim McMasterson</p></div>
                 </div> -->
-               <div class="row">
-                  <div class="large-4 columns"><h2>Our latest</h2></div>
+                <div class="row">
+                  <div class="large-6 columns"><h2>Today's Menu</h2></div>
                    <hr>
-
+                   
+                  <div class="large-7 medium-7 columns"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquam deleniti rem esse sint, explicabo. Dolorum non adipisci possimus impedit dicta at alias soluta iusto cupiditate, excepturi corporis, a maxime.</p>
+                  <h4>Menu for <span id="date" name="date"> </span></h4>
+                  <hr>
+                  <ul>
+                    <li><a href="img/menu.pdf"target="_blank">Lunch menu</a></li>
+                    <li><a href="img/menu.pdf" target="_blank">Dinner menu</a></li>
+                  </ul>
+                  </div>
+                  <div class="large-5 medium-5 columns text-right"><img width="275px"src="img/shroom.png" alt=""></div>
+                    
+                  
+                </div>
+               <div class="row">
+                  <div class="large-6 columns"><h2>Our latest</h2></div>
+                   <hr>
+                  
                    <div class="imgholder">
                    <div id="instafeed"></div>
                    </div>
 
-                   
-                   
+                  
                 </div>
 
 
@@ -185,10 +200,20 @@ https://instagram.com/oauth/authorize/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef
 
         sortby: 'random',
         limit: 4,
-        template: '<div class="large-3 columns"><a class="th smallimg" href="{{link}}"><img src="{{image}}"></a></div>',
+        template: '<div class="large-3 medium-3 columns"><a class="th smallimg" href="{{link}}"><img src="{{image}}"></a></div>',
         clientId: '7d482ce5b9bf4a49ba10a5d2c41ebef0'
     });
     feed.run();
+</script>
+
+<script type="text/javascript">
+
+var currentDate = new Date()
+  var day = currentDate.getDate()
+  var month = currentDate.getMonth() + 1
+  var year = currentDate.getFullYear()
+  var datefiller = (month + "/" + day + "/" + year);
+  $('#date').append(datefiller);
 </script>
    
   </body>

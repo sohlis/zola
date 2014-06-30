@@ -133,3 +133,6 @@ button:hover {
 .imgholder {
   margin-top: 2em;
   height: 12em; }
+
+#date {
+  font-family: "Chron", "Didot", "Bodoni", serif; }
