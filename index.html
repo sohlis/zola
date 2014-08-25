@@ -9,7 +9,7 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
      <link rel="stylesheet" href="css/style.css" />
       <style type="text/css">
-            /* Set a size for our map container, the Google Map will take up 100% of this container */
+
             #map {
                 width: 100%;
                 height: 300px;
@@ -17,13 +17,13 @@
         </style>
   </head>
   <body>
-  
+
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-        
+
         <script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
-        
+
             function init() {
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -35,19 +35,19 @@
                     center: new google.maps.LatLng(37.4462442, -122.1631826), // New York
                     disableDefaultUI: true,
 
-                    // How you would like to style the map. 
+                    // How you would like to style the map.
                     // This is where you would paste any style found on Snazzy Maps.
                     styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"on"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"off"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#F5F2EB"},{lightness:1},{saturation:-99}]}]
                 };
 
-                // Get the HTML DOM element that will contain your map 
+                // Get the HTML DOM element that will contain your map
                 // We are using a div with id="map" seen below in the <body>
                 var mapElement = document.getElementById('map');
 
                 // Create the Google Map using out element and options defined above
                 var map = new google.maps.Map(mapElement, mapOptions);
             }
-        </script> 
+        </script>
     <div class="topphoto row">
       <div class="large-4 large-centered medium-6 medium-centered columns" id="logo">
 
@@ -91,51 +91,52 @@
       <li class= "divider rightsidenav-contents"><a class="reserve" href="http://www.opentable.com/single.aspx?rid=140968&restref=140968">Reservations</a></li>
       <li class= "divider rightsidenav-contents">650.521.0651</li>
     </ul>
-    
+
   </nav>
 </div>
 
- 
-    <!-- end nav --> 
+
+    <!-- end nav -->
       <div id="pagecontain" class="large-12 medium-12 columns">
           <div id="papers" class="row">
               <div id="topheadline" class="large-10 large-centered columns">
                 <h1>Seasonal, french cooking. <br>Coming soon to  <em>Palo Alto.</em></h1>
-                <hr><hr>  
+                <hr><hr>
                 <div class="row">
                 <div id="vegs" class="large-5 medium-5 columns"><img src="img/grapes.png" alt="">
-                
+
                 </div>
                 <div class="large-7 medium-7 columns"><br><br><p>Zola offers seasonal French cooking in an intimate and handsomely renovated space. We feature an array of French and California wines, as well as the best and closest sourced meat and produce of the season. Although our kitchen is steeped in the cooking of France, we are also thoughtful of where we are, and heavily influenced by the sensibilities of California. We couldn’t be happier to be serving this diverse community and are excited to share our excitement about food and wine with you. </p> <br>
                 <a class="inbutton" href="http://www.opentable.com/single.aspx?rid=140968&restref=140968"><button class="">Make a reservation</button></a>
                 </div>
                 </div>
-               
+
                 <div class="row">
                   <div class="large-6 columns"><h2>Today's Menu</h2></div>
                    <hr>
-                   
+
                   <div class="large-7 medium-7 columns"><p>Our menu changes frequently with the whims of the season. We invite you to preview our most recent offerings at your leisure.</p>
                   <h4>Menu for <span id="date" name="date"> </span></h4>
                   <hr>
-                  <ul>
-                    <li><a href="img/menu.pdf"target="_blank">Lunch menu</a></li>
-                    <li><a href="img/menu.pdf" target="_blank">Dinner menu</a></li>
-                  </ul>
+
+                    <a href="img/menu.pdf"><button>Dinner menu</button></a>
+
+
+
                   </div>
                   <div class="large-5 medium-5 columns text-right"><img width="275px"src="img/shroom.png" alt=""></div>
-                    
-                  
+
+
                 </div>
                <div class="row instastuff">
                   <div class="large-6 columns"><h2>Our latest</h2></div>
                    <hr>
-                  
+
                    <div class="imgholder">
                    <div id="instafeed"></div>
                    </div>
 
-                  
+
                 </div>
 
 
@@ -147,13 +148,17 @@
                    <div class="large-4 columns">
                    <br>
                      <p id="contacttext">Zola is located in downtown Palo Alto, in a building situated on the corner of Bryant street and Hamilton avenue. Asides from street parking, the closest public parking is located under the Palo Alto City Hall on Bryant street. </p>
+
+
+
+
+
+
                    </div>
                    <div class="large-4 columns">
                     <h4>Heures d'Ouverture</h4>
                     <hr>
-                    <p>Lunch</p>
-                    <p class="ophours">Tuesday through Saturday:<br>11:30 - 2:30</p>
-                    <p>Dinner</p>
+
                     <p class="ophours">Tuesday through Thusday:<br>5:00-9:00</p>
 			<p class="ophours">Friday and Saturday:<br>5:00-10:00</p>
                    </div>
@@ -166,6 +171,11 @@
                     <span class="region">Palo Alto CA</span>,
                     <span class="postal-code">94401</span><br>
                     <span class="tel">650.521.0651</span> &nbsp; | &nbsp;<a href="mailto:gb@zolapa.com">Contact us</a>
+                    <ul class="socialicons">
+                    <a href="https://twitter.com/GbChefing"><li class="twitter"></li></a>
+                    <a href="https://www.facebook.com/zolapaloalto"><li class="facebook"></li></a>
+                    <a href="http://instagram.com/zolapaloalto"><li class="instagram"></li></a>
+                    </ul>
                     </p>
                     </div>
                    </div>
@@ -176,16 +186,7 @@
           </div>
       </div>
     </div>
-    <!-- 
 
-
-https://instagram.com/oauth/access_token/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef0&redirect_uri=http://stefansohlstrom.com/#/&response_type=access_token
-
-https://instagram.com/oauth/access_token/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef0&redirect_uri=http%3A%2F%2Fstefansohlstrom.com/#/&response_type=token
-
-https://instagram.com/oauth/authorize/?client_id=7d482ce5b9bf4a49ba10a5d2c41ebef0&redirect_uri=http%3A%2F%2Fstefansohlstrom.com%2F#%2F&response_type=token
-     -->
-     
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -215,6 +216,6 @@ var currentDate = new Date()
   var datefiller = (month + "/" + day + "/" + year);
   $('#date').append(datefiller);
 </script>
-   
+
   </body>
 </html>

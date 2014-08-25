@@ -5,15 +5,15 @@ $light-red: #AB4A35;
 
 @font-face {
   font-family: 'Chron';
-  src: url('cd.otf'); 
+  src: url('cd.otf');
 }
 @font-face {
   font-family: 'ChronItal';
-  src: url('cd_i.otf'); 
+  src: url('cd_i.otf');
 }
 @font-face {
   font-family: 'ChronText';
-  src: url('ct.otf'); 
+  src: url('ct.otf');
 }
 $head-font: "Chron", "Didot", "Bodoni", serif;
 $em-font: "ChronItal", "Didot", "Bodoni", serif;
@@ -64,7 +64,7 @@ a:hover {
    margin-right: auto;
    max-width: initial;
 
-     background: url(../img/leek.jpg) no-repeat center center fixed; 
+     background: url(../img/leek.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,12 +82,12 @@ html {  background-color:#373737;}
 }
 #pagecontain {
  background-color: $white-color;
- 
+
  // border-radius: 5px;
 }
 
 #papers {
-  
+
 }
 #topheadline {
   padding-top: 3em;
@@ -113,7 +113,7 @@ p.adr {
 }
 
 .contain-to-grid {
-  background-color: #8A2E20; 
+  background-color: #8A2E20;
 }
 
 #wordmark {
@@ -131,7 +131,7 @@ p.adr {
   color: #F5F2EB;
   line-height: 45px;
   margin-right: 20px;
-} 
+}
 
 a.reserve {
   color: $white-color;
@@ -178,7 +178,7 @@ button:hover {
 }
 
 button:active {
-  
+
 }
 
 .smallimg {
@@ -203,10 +203,10 @@ button:active {
 
 // LETS MAKE THIS PUPPY RESPONSIVE
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : portrait) { 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
 
 
 
@@ -238,4 +238,33 @@ button {
   display: none;
 }
 
+}
+
+.socialicons {
+  display: flex;
+  text-align: left;
+    li {
+      margin-top: 10px;
+      margin-left: -10px;
+      margin-right: 100px;
+    }
+}
+
+
+.twitter {
+  background: url('/img/icons.svg') no-repeat -112px 0;
+  width: 23px;
+  height: 23px;
+}
+
+.facebook {
+  background: url('/img/icons.svg') no-repeat 0 0;
+  width: 23px;
+  height: 23px;
+}
+
+.instagram {
+  background: url('/img/icons.svg') no-repeat -53px 0;
+  width: 23px;
+  height: 23px;
 }
