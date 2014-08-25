@@ -27,13 +27,16 @@
             function init() {
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var myLatlng = new google.maps.LatLng(37.4462442,-122.1631826);
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 16,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(37.4462442, -122.1631826), // New York
+                    center: myLatlng,
                     disableDefaultUI: true,
+
+
 
                     // How you would like to style the map.
                     // This is where you would paste any style found on Snazzy Maps.
@@ -46,6 +49,11 @@
 
                 // Create the Google Map using out element and options defined above
                 var map = new google.maps.Map(mapElement, mapOptions);
+                  var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title: 'Hello World!'
+                  });
             }
         </script>
     <div class="topphoto row">
@@ -182,7 +190,7 @@
                 </div>
               </div>
 
-              <div id="map"></div>
+              <a href="https://www.google.com/maps/place/Zola/@37.445249,-122.160554,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xa5292e077c276cb4"><div id="map"></div></a>
           </div>
       </div>
     </div>
